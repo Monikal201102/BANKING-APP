@@ -1,0 +1,4 @@
+node_modules
+.env
+bankapp-frontend/node_modules
+banking-backend/node_modules

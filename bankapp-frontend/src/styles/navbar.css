@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #ffffff;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.navbar-left .logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #2563eb;
+}
+
+.navbar-right a {
+  margin-left: 24px;
+  font-weight: 500;
+  color: #334155;
+  text-decoration: none;
+}
+
+.navbar-right a:hover {
+  color: #1d4ed8;
+}
