@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "bankapp-frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "bankapp-frontend/build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "bankapp-frontend/$1"
+    }
+  ]
+}
