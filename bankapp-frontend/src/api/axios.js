@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: "https://banking-backend-0ssd.onrender.com/api",
+  baseURL: 'http://localhost:5000/api',
 });
 
 // Add interceptor to attach token from localStorage
