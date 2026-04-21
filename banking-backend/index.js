@@ -15,8 +15,18 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// ✅ UPDATED CORS (ONLY CHANGE)
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://banking-app-6enl.vercel.app"
+    ],
+    credentials: true,
+  })
+);
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Routes
